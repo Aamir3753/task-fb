@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./mdl/font-google.css">
+    <link rel="stylesheet" href="./mdl/material.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Assignment</title>
+
+</head>
+
+<body>
+    <div class="modal-container-hide" id="modal_container">
+        <h3>Create Post</h3>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <label for="postTitle" class="mdl-textfield__label">Post Title</label>
+            <input type="text" class="mdl-textfield__input" id="postTitle">
+        </div>
+        <div class="error" id="errorTitle"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <label for="description" class="mdl-textfield__label">Description(optional)</label>
+            <textarea  id="description" rows="3" class="mdl-textfield__input"></textarea>
+        </div>
+        <div>
+            <label class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent">
+                Upload Image
+                <input type="file" id="uploadFile">
+            </label>
+        </div>
+        <div id="viewImage">
+        </div>
+        <div class="error" id="errorUpload"></div>
+        <div>
+            <input type="button" value="Submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="submitPost">
+        </div>
+        <div>
+            <button id="modal_close" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">close</button>
+        </div>
+    </div>
+    <div class="container">
+
+        <button id="create_post" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">Create
+            post
+        </button>
+        <div id="post_container"></div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./mdl/material.min.js"></script>
+
+</body>
+
+</html>
